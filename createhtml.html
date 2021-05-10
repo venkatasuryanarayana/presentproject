@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div class="sample">divison1</div>
+	<div class="sample">divison2</div>
+
+</body>
+</html>
+<script type="text/javascript">
+	var divElement = document.querySelector(".sample");
+	console.log(divElement);
+
+	var newElement = document.createElement("h2");
+	newElement.textContent="sample heading";
+	console.log(newElement);
+
+	newElement.setAttribute("id","heading");
+
+	newElement.setAttribute("class","heading");
+
+	newElement.classList.add("h2","h3","h4");
+
+	newElement.innerHTML="<h3>hello</h3>";
+
+    divElement.appendChild(newElement);
+
+
+divElement.removeChild(newElement);
+	
+</script>
